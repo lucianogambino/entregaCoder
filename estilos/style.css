@@ -1,0 +1,852 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Arima:wght@200;300&family=Barlow+Condensed&family=Bebas+Neue&family=Cinzel&family=Indie+Flower&family=Montserrat:wght@100;300&family=Oswald&family=PT+Serif&family=Roboto:wght@300&family=Shadows+Into+Light&family=Suez+One&display=swap");
+@media (min-width: 1px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #350404;
+    font-family: 'Montserrat';
+    color: white;
+    /* ____________________HEADER____________________*/
+    /* _______________________________NAV (HEADER)_______________________________ */
+    /* _______________________________FOOTER_______________________________ */
+  }
+  body section {
+    margin: 30px 0px 30px 0px;
+    padding-bottom: 30px;
+  }
+  body .titulo {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+    padding-top: 30px;
+    margin: 5px 0px;
+  }
+  body .tituloHeader {
+    color: #A48811;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    text-align: center;
+  }
+  body nav.navbar {
+    background-color: #350404;
+    color: #ffffff;
+  }
+  body nav.navbar .nav-link {
+    color: white;
+    font-weight: 800;
+  }
+  body nav.navbar .nav-link:hover {
+    color: #A48811;
+  }
+  body nav.navbar .navbar-brand {
+    color: #A48811;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  body nav.navbar .navbar-brand:hover {
+    color: #A48811;
+  }
+  body nav.navbar button span i {
+    color: white;
+  }
+  body .footer h2 {
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: small;
+  }
+}
+
+@media (min-width: 350px) {
+  body .titulo {
+    font-size: 40px;
+  }
+  header nav.navbar .navbar-brand {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 500px) {
+  body header nav.navbar .navbar-brand {
+    font-size: 30px;
+  }
+}
+
+#headerInicio {
+  grid-area: cabeza;
+}
+
+#especialidadesInicio {
+  grid-area: especialidades;
+}
+
+#contactoInicio {
+  grid-area: contacto;
+}
+
+#redesInicio {
+  grid-area: redes;
+}
+
+#ubicacionInicio {
+  grid-area: ubicacion;
+}
+
+#footerInicio {
+  grid-area: footer;
+}
+
+@media (min-width: 1px) {
+  body {
+    /*_______________________HEADER_______________________*/
+    /* _______________________ESPECIALIDADES_______________________ */
+    /* ____________________CONTACTO____________________*/
+    /* ____________________REDES____________________*/
+    /* ____________________UBICACION____________________*/
+    /* ____________________FOOTER____________________*/
+  }
+  body #headerInicio {
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  body #headerInicio .cajaInicio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body #headerInicio .cajaInicio img {
+    min-height: 120px;
+    max-height: 120px;
+    min-width: 120px;
+    max-width: 120px;
+    margin: 20px 20px 0 20px;
+  }
+  body #headerInicio #navbarIndex {
+    background-color: transparent;
+  }
+  body #especialidadesInicio h3 {
+    background-color: #A48811;
+    padding: 0;
+    margin-top: 50px;
+  }
+  body #especialidadesInicio #fotosEspecialidades {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body #especialidadesInicio #fotosEspecialidades .cajaEspecilidades:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+  body #especialidadesInicio #fotosEspecialidades .cajaEspecilidades img {
+    min-width: 230px;
+    max-width: 230px;
+    min-height: 230px;
+    max-height: 230px;
+    margin: 20px 10px 10px 10px;
+    border: solid 1px #A48811;
+  }
+  body #especialidadesInicio #fotosEspecialidades .cajaEspecilidades h4 {
+    background-color: white;
+    color: #A48811;
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2px;
+    margin: 7px;
+    border-radius: 5px;
+  }
+  body #contactoInicio {
+    background-image: url(../img/fondoContacto33.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body #contactoInicio #textoContacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body #contactoInicio #textoContacto #tituloContacto {
+    margin: 10px 10px;
+  }
+  body #contactoInicio #textoContacto p {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+  }
+  body #contactoInicio #textoContacto button {
+    font-size: 15px;
+    font-family: 'Cinzel', serif;
+    background-color: #350404;
+    color: #A48811;
+    border: solid 1px #A48811;
+    border-radius: 15px;
+    margin-bottom: 70px;
+    padding: 10px;
+  }
+  body #contactoInicio #textoContacto button:hover {
+    background-color: #A48811;
+    color: #350404;
+    border: solid 1px #A48811;
+  }
+  body #redesInicio #iconosRedes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background-color: #A48811;
+    align-items: center;
+  }
+  body #redesInicio #iconosRedes div i {
+    font-size: 40px;
+    color: #A48811;
+    background-color: #350404;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  body #redesInicio #iconosRedes div h2 {
+    font-size: 14px;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+  }
+  body #ubicacionInicio {
+    background-image: url(../img/fondoUbi.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 0;
+  }
+  body #ubicacionInicio h3 {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 30px;
+  }
+  body #ubicacionInicio #ubicacionContenido {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body #ubicacionInicio #ubicacionContenido iframe {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 330px;
+    max-height: 330px;
+  }
+  body #footerInicio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: black;
+    color: white;
+    font-family: 'Cinzel', serif;
+  }
+  body #footerInicio h2 {
+    text-align: center;
+    font-size: 15px;
+  }
+  body #footerInicio h3 {
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+  body #footerInicio .redesFooter {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: center;
+  }
+  body #footerInicio .redesFooter i {
+    font-size: 25px;
+  }
+  body #footerInicio .redesFooter .nombreRedSocialPie {
+    font-size: 10px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 360px) {
+  body #especialidadesInicio #fotosEspecialidades .cajaEspecilidades img {
+    min-width: 330px;
+    max-width: 330px;
+    min-height: 300px;
+    max-height: 300px;
+  }
+  body #redesInicio #iconosRedes {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body #ubicacionInicio #ubicacionContenido iframe {
+    min-width: 330px;
+    max-width: 330px;
+    min-height: 400px;
+    max-height: 400px;
+  }
+}
+
+@media (min-width: 450px) {
+  body #especialidadesInicio #fotosEspecialidades .cajaEspecilidades img {
+    min-width: 420px;
+    max-width: 420px;
+    min-height: 300px;
+    max-height: 300px;
+  }
+}
+
+@media (min-width: 550px) {
+  body {
+    /*_______________________HEADER_______________________*/
+    /* _______________________ESPECIALIDADES_______________________ */
+    /* ____________________CONTACTO____________________*/
+    /* ____________________REDES____________________*/
+    /* ____________________UBICACION____________________*/
+    /*____________________FOOTER____________________*/
+  }
+  body #headerInicio .cajaInicio img {
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    max-width: 150px;
+  }
+  body #especialidadesInicio #fotosEspecialidades {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+  }
+  body #especialidadesInicio #fotosEspecialidades .cajaEspecilidades img {
+    min-width: 230px;
+    max-width: 230px;
+    min-height: 230px;
+    max-height: 230px;
+  }
+  body #contactoInicio #textoContacto p {
+    font-size: 20px;
+  }
+  body #contactoInicio #textoContacto button {
+    font-size: 20px;
+  }
+  body #ubicacionInicio #ubicacionContenido iframe {
+    min-width: 450px;
+    max-width: 450px;
+    min-height: 500px;
+    max-height: 500px;
+  }
+}
+
+@media (min-width: 650px) {
+  /*____________________FOOTER____________________*/
+  #footerInicio {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 20px 0px 0px 0px;
+  }
+  #footerInicio h2 {
+    width: 33%;
+    font-size: 25px;
+    margin-top: 0;
+  }
+  #footerInicio h3 {
+    width: 34%;
+    font-size: 15px;
+  }
+  #footerInicio .redesFooter {
+    width: 33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #footerInicio .redesFooter i {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 750px) {
+  body {
+    /*_______________________HEADER_______________________*/
+    /* _______________________ESPECIALIDADES_______________________ */
+    /* ____________________CONTACTO____________________*/
+    /* ____________________REDES____________________*/
+    /* ____________________UBICACION____________________*/
+    /*____________________FOOTER____________________*/
+  }
+  body #headerInicio .cajaInicio img {
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    margin: 20px;
+  }
+  body #especialidadesInicio #fotosEspecialidades .cajaEspecilidades img {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 300px;
+    max-height: 300px;
+  }
+  body #especialidadesInicio #fotosEspecialidades .cajaEspecilidades h4 {
+    font-size: 20px;
+    padding: 7px;
+    margin: 15px;
+  }
+  body #contactoInicio #textoContacto p {
+    font-size: 20px;
+  }
+  body #contactoInicio #textoContacto button {
+    font-size: 20px;
+  }
+  body #redesInicio #iconosRedes {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body #redesInicio #iconosRedes div i {
+    font-size: 80px;
+  }
+  body #redesInicio #iconosRedes div h2 {
+    font-size: 20px;
+  }
+  body #ubicacionInicio #ubicacionContenido iframe {
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 550px;
+    max-height: 550px;
+  }
+  body #footerInicio {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 20px 0px 0px 0px;
+  }
+  body #footerInicio h2 {
+    width: 33%;
+    font-size: 25px;
+  }
+  body #footerInicio h3 {
+    width: 34%;
+    font-size: 15px;
+  }
+  body #footerInicio .redesFooter {
+    width: 33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body #footerInicio .redesFooter i {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    /* ____________________ESPECIALIDADES____________________*/
+  }
+  body #especialidadesInicio #fotosEspecialidades {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+  }
+}
+
+header#headerContacto {
+  grid-area: header;
+}
+
+div#fondoContacto {
+  grid-area: formulario;
+}
+
+@media (min-width: 1px) {
+  #paginaContacto {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "header" "formulario";
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    height: 100vh;
+  }
+  #paginaContacto #fondoContacto {
+    background-image: url(../img/fondoP1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  #paginaContacto #fondoContacto main#formularioContacto {
+    width: 260px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  #paginaContacto #fondoContacto main#formularioContacto h1 {
+    font-size: 30px;
+  }
+  #paginaContacto #fondoContacto main#formularioContacto .form-control {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 350px) {
+  #paginaContacto #fondoContacto main#formularioContacto {
+    width: 330px;
+  }
+  #paginaContacto #fondoContacto main#formularioContacto h1 {
+    font-size: 50px;
+  }
+  #paginaContacto #fondoContacto main#formularioContacto .form-control {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 482px) {
+  #paginaContacto #fondoContacto main#formularioContacto {
+    width: 450px;
+  }
+  #paginaContacto #fondoContacto main#formularioContacto h1 {
+    font-size: 65px;
+  }
+  #paginaContacto #fondoContacto main#formularioContacto .form-control {
+    font-size: 18px;
+  }
+}
+
+header#headerSugerencias {
+  grid-area: cabezaS;
+}
+
+div#fondoSugerencias {
+  grid-area: sugerencia;
+}
+
+@media (min-width: 1px) {
+  #paginaSugerencias {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "cabezaS" "sugerencia";
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    height: 100vh;
+  }
+  #paginaSugerencias #fondoSugerencias {
+    background-image: url(../img/fondoSugerencias.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  #paginaSugerencias #fondoSugerencias main section#textoSugerencias {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #paginaSugerencias #fondoSugerencias main section#textoSugerencias h1 {
+    font-size: 37px;
+  }
+  #paginaSugerencias #fondoSugerencias main section#textoSugerencias p {
+    width: 265px;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: 'Arima', cursive;
+  }
+  #paginaSugerencias #fondoSugerencias main section#sugerencias {
+    width: 250px;
+    margin: auto;
+    margin-top: 0;
+    background-color: rgba(223, 219, 219, 0.4);
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  #paginaSugerencias #fondoSugerencias main section#sugerencias .form-control {
+    height: 200px;
+  }
+}
+
+@media (min-width: 1px) and (min-width: 357px) {
+  #paginaSugerencias #fondoSugerencias main section#textoSugerencias h1 {
+    font-size: 43px;
+  }
+  #paginaSugerencias #fondoSugerencias main section#textoSugerencias p {
+    width: 350px;
+    font-size: 17px;
+  }
+  #paginaSugerencias #fondoSugerencias main section#sugerencias {
+    width: 350px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1px) and (min-width: 530px) {
+  #paginaSugerencias #fondoSugerencias main section#textoSugerencias h1 {
+    font-size: 60px;
+  }
+  #paginaSugerencias #fondoSugerencias main section#textoSugerencias p {
+    width: 500px;
+    font-size: 20px;
+  }
+  #paginaSugerencias #fondoSugerencias main section#sugerencias {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1px) and (min-width: 730px) {
+  #paginaSugerencias #fondoSugerencias main section#textoSugerencias h1 {
+    font-size: 80px;
+  }
+  #paginaSugerencias #fondoSugerencias main section#textoSugerencias p {
+    width: 700px;
+  }
+  #paginaSugerencias #fondoSugerencias main section#sugerencias {
+    width: 500px;
+    margin-top: 20px;
+    padding: 10px 20px;
+  }
+  #paginaSugerencias #fondoSugerencias main section#sugerencias .form-control {
+    height: 100px;
+  }
+}
+
+@media (min-width: 1px) {
+  div#paginaNosotros main div.container {
+    background-color: white;
+    border-radius: 10px;
+  }
+  div#paginaNosotros main div.container h1 {
+    font-size: 40px;
+  }
+  div#paginaNosotros main div.container div p {
+    color: black;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 450px) {
+  div#paginaNosotros main div.container h1 {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 800px) {
+  div#paginaNosotros main div.container h1 {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 992px) {
+  div#paginaNosotros main div.container div p {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1px) {
+  div#paginaTrabajos main #textoTrabajos {
+    background-color: white;
+    margin-bottom: 50px;
+  }
+  div#paginaTrabajos main #textoTrabajos h1 {
+    font-size: 35px;
+  }
+  div#paginaTrabajos main #textoTrabajos p {
+    font-family: 'Arima', cursive;
+    color: black;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center;
+  }
+  div#paginaTrabajos main #trabajos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div#paginaTrabajos main #trabajos article.cajaTrabajos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 50px;
+  }
+  div#paginaTrabajos main #trabajos article.cajaTrabajos img {
+    min-width: 270px;
+    max-width: 270px;
+    min-height: 270px;
+    max-height: 270px;
+    border: solid #A48811 4px;
+    border-radius: 5px;
+  }
+  div#paginaTrabajos main #trabajos article.cajaTrabajos p {
+    color: black;
+    font-weight: 800;
+    background-color: #A48811;
+    border-radius: 5px;
+    border: solid white 2px;
+    margin: 20px 15px;
+    font-size: 15px;
+    text-align: center;
+  }
+  div#paginaTrabajos main #trabajos #ultimoTrabajos {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 350px) {
+  div#paginaTrabajos main div#textoTrabajos p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 500px) {
+  div#paginaTrabajos main div#textoTrabajos h1 {
+    font-size: 60px;
+  }
+  div#paginaTrabajos main div#textoTrabajos p {
+    font-size: 18px;
+  }
+  div#paginaTrabajos main #trabajos article.cajaTrabajos img {
+    min-width: 330px;
+    max-width: 330px;
+    min-height: 330px;
+    max-height: 330px;
+  }
+}
+
+@media (min-width: 750px) {
+  div#paginaTrabajos main div#textoTrabajos h1 {
+    font-size: 80px;
+  }
+  div#paginaTrabajos main div#textoTrabajos p {
+    font-size: 27px;
+  }
+  div#paginaTrabajos main #trabajos article.cajaTrabajos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  div#paginaTrabajos main #trabajos p {
+    padding: 20px;
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

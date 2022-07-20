@@ -1,0 +1,114 @@
+@media(min-width:1px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: $bordo;
+        font-family: 'Montserrat';
+        color: white;
+
+        section {
+            margin: 30px 0px 30px 0px;
+            padding-bottom: 30px;
+
+        }
+
+        .titulo {
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Cinzel', serif;
+            padding-top: 30px;
+            margin: 5px 0px;
+        }
+
+
+        /* ____________________HEADER____________________*/
+
+        .tituloHeader {
+            color: $dorado;
+            font-family: 'Cinzel', serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* _______________________________NAV (HEADER)_______________________________ */
+
+        nav.navbar {
+            background-color: $bordo;
+            color: #ffffff;
+
+            .nav-link {
+                color: white;
+                font-weight: 800;
+
+                &:hover {
+                    color: $dorado;
+                }
+            }
+
+            .navbar-brand {
+                color: $dorado;
+                font-family: 'Cinzel', serif;
+                font-weight: bold;
+                font-size: 20px;
+
+                &:hover {
+                    color: $dorado;
+                }
+            }
+
+            button span i {
+                color: white;
+
+            }
+        }
+
+        /* _______________________________FOOTER_______________________________ */
+        .footer {
+            h2 {
+                margin-top: 30px;
+                margin-bottom: 0;
+                padding-bottom: 20px;
+                text-align: center;
+                font-size: small;
+            }
+        }
+    }
+}
+
+@media(min-width:350px) {
+
+    body {
+        .titulo {
+            font-size: 40px;
+        }
+    }
+
+    header {
+        nav.navbar {
+
+            .navbar-brand {
+                font-size: 25px;
+            }
+
+        }
+    }
+}
+
+@media(min-width:500px) {
+
+    body {
+        header {
+            nav.navbar {
+
+                .navbar-brand {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}

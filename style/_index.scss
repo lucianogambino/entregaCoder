@@ -1,0 +1,571 @@
+#headerInicio {
+    grid-area: cabeza
+}
+
+#especialidadesInicio {
+    grid-area: especialidades;
+}
+
+#contactoInicio {
+    grid-area: contacto
+}
+
+#redesInicio {
+    grid-area: redes;
+}
+
+#ubicacionInicio {
+    grid-area: ubicacion
+}
+
+#footerInicio {
+    grid-area: footer;
+}
+
+@media (min-width: 1px) {
+    body {
+        /*_______________________HEADER_______________________*/
+
+        #headerInicio {
+            background-image: url(../img/fondo.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            .cajaInicio {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    min-height: 120px;
+                    max-height: 120px;
+                    min-width: 120px;
+                    max-width: 120px;
+                    margin: 20px 20px 0 20px;
+                }
+            }
+
+            #navbarIndex {
+                background-color: transparent;
+
+
+            }
+        }
+
+        /* _______________________ESPECIALIDADES_______________________ */
+        #especialidadesInicio {
+            h3 {
+                background-color: $dorado;
+                padding: 0;
+                margin-top: 50px;
+            }
+
+            #fotosEspecialidades {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: auto;
+                justify-content: space-around;
+
+                .cajaEspecilidades {
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: 2s;
+                    }
+
+
+                    img {
+                        min-width: 230px;
+                        max-width: 230px;
+                        min-height: 230px;
+                        max-height: 230px;
+                        margin: 20px 10px 10px 10px;
+                        border: solid 1px $dorado;
+                    }
+
+                    h4 {
+                        background-color: white;
+                        color: $dorado;
+                        font-size: 15px;
+                        font-weight: bolder;
+                        text-align: center;
+                        font-family: 'Montserrat', sans-serif;
+                        padding: 2px;
+                        margin: 7px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+
+        /* ____________________CONTACTO____________________*/
+
+        #contactoInicio {
+
+            background-image: url(../img/fondoContacto33.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            #textoContacto {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                #tituloContacto {
+                    margin: 10px 10px;
+
+                }
+
+                p {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border-radius: 5px;
+                    padding: 5px;
+                    margin-left: 3px;
+                    margin-right: 3px;
+                    text-align: center;
+                    font-size: 12px;
+                    color: white;
+                }
+
+                button {
+                    font-size: 15px;
+                    font-family: 'Cinzel', serif;
+                    background-color: $bordo;
+                    color: $dorado;
+                    border: solid 1px $dorado;
+                    border-radius: 15px;
+                    margin-bottom: 70px;
+                    padding: 10px;
+
+                    &:hover {
+                        background-color: $dorado;
+                        color: $bordo;
+                        border: solid 1px $dorado;
+                    }
+                }
+
+            }
+        }
+
+        /* ____________________REDES____________________*/
+
+        #redesInicio {
+
+            #iconosRedes {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                text-align: center;
+                background-color: $dorado;
+                align-items: center;
+
+                div {
+
+                    i {
+                        font-size: 40px;
+                        color: $dorado;
+                        background-color: $bordo;
+                        padding: 20px;
+                        border-radius: 15px;
+                        margin-top: 20px;
+                        text-align: center;
+                    }
+
+                    h2 {
+                        font-size: 14px;
+                        font-weight: bolder;
+                        text-align: center;
+                        color: black;
+                        margin-top: 10px
+                    }
+                }
+            }
+        }
+
+        /* ____________________UBICACION____________________*/
+        #ubicacionInicio {
+            background-image: url(../img/fondoUbi.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin-bottom: 0;
+
+            h3 {
+                background-color: rgba(0, 0, 0, 0.5);
+                border-radius: 5px;
+                padding: 5px;
+                margin-bottom: 30px;
+            }
+
+            #ubicacionContenido {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                iframe {
+                    min-width: 250px;
+                    max-width: 250px;
+                    min-height: 330px;
+                    max-height: 330px;
+                }
+
+            }
+        }
+
+        /* ____________________FOOTER____________________*/
+
+        #footerInicio {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            font-family: 'Cinzel', serif;
+
+
+            h2 {
+                text-align: center;
+                font-size: 15px;
+            }
+
+            h3 {
+                text-align: center;
+                font-size: 10px;
+                margin-bottom: 20px;
+            }
+
+            .redesFooter {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+
+                i {
+                    font-size: 25px;
+                }
+
+                .nombreRedSocialPie {
+                    font-size: 10px;
+                    margin-top: 0;
+
+                }
+
+            }
+        }
+    }
+
+}
+
+@media(min-width:360px) {
+    body {
+        #especialidadesInicio {
+            #fotosEspecialidades {
+
+                .cajaEspecilidades {
+                    img {
+                        min-width: 330px;
+                        max-width: 330px;
+                        min-height: 300px;
+                        max-height: 300px;
+                    }
+                }
+            }
+        }
+
+
+        #redesInicio {
+
+            #iconosRedes {
+                flex-direction: row;
+            }
+        }
+
+
+        #ubicacionInicio {
+
+            #ubicacionContenido {
+
+                iframe {
+                    min-width: 330px;
+                    max-width: 330px;
+                    min-height: 400px;
+                    max-height: 400px;
+                }
+
+            }
+        }
+    }
+
+}
+
+@media(min-width:450px) {
+    body {
+        #especialidadesInicio {
+            #fotosEspecialidades {
+
+                .cajaEspecilidades {
+                    img {
+                        min-width: 420px;
+                        max-width: 420px;
+                        min-height: 300px;
+                        max-height: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(min-width:550px) {
+    body {
+        /*_______________________HEADER_______________________*/
+
+        #headerInicio {
+            .cajaInicio {
+                img {
+                    min-height: 150px;
+                    max-height: 150px;
+                    min-width: 150px;
+                    max-width: 150px;
+                }
+            }
+        }
+
+        /* _______________________ESPECIALIDADES_______________________ */
+        #especialidadesInicio {
+            #fotosEspecialidades {
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto auto;
+
+                .cajaEspecilidades {
+                    img {
+                        min-width: 230px;
+                        max-width: 230px;
+                        min-height: 230px;
+                        max-height: 230px;
+                    }
+                }
+
+
+            }
+        }
+
+        /* ____________________CONTACTO____________________*/
+
+        #contactoInicio {
+
+            #textoContacto {
+
+                p {
+                    font-size: 20px;
+                }
+
+                button {
+                    font-size: 20px;
+                }
+
+            }
+        }
+
+        /* ____________________REDES____________________*/
+
+
+        /* ____________________UBICACION____________________*/
+        #ubicacionInicio {
+
+            #ubicacionContenido {
+
+                iframe {
+                    min-width: 450px;
+                    max-width: 450px;
+                    min-height: 500px;
+                    max-height: 500px;
+                }
+
+            }
+        }
+
+        /*____________________FOOTER____________________*/
+
+    }
+}
+
+@media(min-width:650px) {
+
+    /*____________________FOOTER____________________*/
+    #footerInicio {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px 0px 0px 0px;
+
+
+        h2 {
+            width: 33%;
+            font-size: 25px;
+            margin-top: 0;
+        }
+
+        h3 {
+            width: 34%;
+            font-size: 15px;
+        }
+
+        .redesFooter {
+            width: 33%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            i {
+                font-size: 30px;
+            }
+
+        }
+    }
+}
+
+@media(min-width:750px) {
+    body {
+
+        /*_______________________HEADER_______________________*/
+        #headerInicio {
+            .cajaInicio {
+                img {
+                    min-height: 300px;
+                    max-height: 300px;
+                    min-width: 300px;
+                    max-width: 300px;
+                    margin: 20px;
+                }
+            }
+        }
+
+        /* _______________________ESPECIALIDADES_______________________ */
+        #especialidadesInicio {
+            #fotosEspecialidades {
+
+                .cajaEspecilidades {
+                    img {
+                        min-width: 300px;
+                        max-width: 300px;
+                        min-height: 300px;
+                        max-height: 300px;
+                    }
+
+                    h4 {
+                        font-size: 20px;
+                        padding: 7px;
+                        margin: 15px;
+                    }
+                }
+            }
+        }
+
+        /* ____________________CONTACTO____________________*/
+
+        #contactoInicio {
+
+            #textoContacto {
+
+                p {
+                    font-size: 20px;
+                }
+
+                button {
+                    font-size: 20px;
+                }
+
+            }
+        }
+
+        /* ____________________REDES____________________*/
+
+        #redesInicio {
+
+            #iconosRedes {
+                flex-direction: row;
+
+                div {
+
+                    i {
+                        font-size: 80px;
+                    }
+
+                    h2 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        /* ____________________UBICACION____________________*/
+        #ubicacionInicio {
+
+            #ubicacionContenido {
+
+                iframe {
+                    min-width: 600px;
+                    max-width: 600px;
+                    min-height: 550px;
+                    max-height: 550px;
+                }
+
+            }
+        }
+
+        /*____________________FOOTER____________________*/
+
+        #footerInicio {
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 20px 0px 0px 0px;
+
+
+            h2 {
+                width: 33%;
+                font-size: 25px;
+            }
+
+            h3 {
+                width: 34%;
+                font-size: 15px;
+            }
+
+            .redesFooter {
+                width: 33%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+                i {
+                    font-size: 30px;
+                }
+
+            }
+        }
+    }
+}
+
+@media(min-width:1000px) {
+    body {
+
+        /* ____________________ESPECIALIDADES____________________*/
+
+        #especialidadesInicio {
+            #fotosEspecialidades {
+                grid-template-columns: auto auto auto;
+                grid-template-rows: auto auto auto;
+
+            }
+        }
+    }
+}

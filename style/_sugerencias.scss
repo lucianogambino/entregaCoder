@@ -1,0 +1,136 @@
+header#headerSugerencias {
+    grid-area: cabezaS;
+}
+
+div#fondoSugerencias {
+    grid-area: sugerencia;
+}
+
+@media(min-width:1px) {
+    #paginaSugerencias {
+        display: grid;
+        grid-template-areas:
+            "cabezaS"
+            "sugerencia";
+        grid-template-rows: auto auto;
+        height: 100vh;
+
+        #fondoSugerencias {
+            background-image: url(../img/fondoSugerencias.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            main {
+                section#textoSugerencias {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    h1 {
+                        font-size: 37px;
+                    }
+
+                    p {
+                        width: 265px;
+                        font-size: 15px;
+                        text-align: center;
+                        background-color: rgba(0, 0, 0, 0.7);
+                        font-family: 'Arima', cursive;
+                    }
+                }
+
+                section#sugerencias {
+                    width: 250px;
+                    margin: auto;
+                    margin-top: 0;
+                    background-color: rgba(223, 219, 219, 0.4);
+                    padding: 5px 10px;
+                    border-radius: 10px;
+
+                    .form-control {
+                        height: 200px;
+                    }
+                }
+
+            }
+
+            @media(min-width:357px) {
+                main {
+                    section#textoSugerencias {
+
+                        h1 {
+                            font-size: 43px;
+                        }
+
+                        p {
+                            width: 350px;
+                            font-size: 17px;
+                        }
+                    }
+
+                    section#sugerencias {
+                        width: 350px;
+                        margin-top: 20px;
+
+                    }
+                }
+
+            }
+
+            @media(min-width:530px) {
+                main {
+                    section#textoSugerencias {
+
+                        h1 {
+                            font-size: 60px;
+                        }
+
+                        p {
+                            width: 500px;
+                            font-size: 20px;
+                        }
+                    }
+
+                    section#sugerencias {
+                        width: 400px;
+                    }
+
+                }
+
+
+            }
+
+            @media(min-width:730px) {
+                main {
+                    section#textoSugerencias {
+
+                        h1 {
+                            font-size: 80px;
+                        }
+
+                        p {
+                            width: 700px;
+                        }
+                    }
+
+                    section#sugerencias {
+                        width: 500px;
+                        margin-top: 20px;
+                        padding: 10px 20px;
+
+                        .form-control {
+                            height: 100px;
+                        }
+                    }
+
+                }
+
+            }
+
+
+        }
+
+    }
+}
